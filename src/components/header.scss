@@ -1,0 +1,39 @@
+.header {
+    margin-bottom: 2rem;
+    &__navbar {
+        
+        background-color: black;
+
+        &__link-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            
+            &__link {
+
+
+                .link__text {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: white;
+                    transition: 200ms color ease-in-out, 200ms border-bottom ease-in-out;
+                    padding-top: 1.8rem;
+                    padding-bottom: 1.4rem;
+                    display: block;
+                    border-bottom: .4rem solid transparent;
+                }
+
+                .active {
+                    color: green;
+                    border-color: green;
+                }
+
+                .link__text:hover {
+                    color: gold;
+                    border-color: gold;
+                }
+            }
+        }
+    }
+}
