@@ -10,7 +10,6 @@ export const ItemDetailPage = () => {
     const { data: itemData, isLoading: loading} = usePokeapi(`item/${id}`);
 
     const searchEnglishName = (languages) => {
-        console.log(languages);
         let englishName = languages.filter((language) => {
             return  language.language.name === "en";
         })
@@ -18,7 +17,6 @@ export const ItemDetailPage = () => {
     }
 
     const searchEnglishText = (languages) => {
-        console.log(languages);
         let englishName = languages.filter((language) => {
             return  language.language.name === "en";
         })
